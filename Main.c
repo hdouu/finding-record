@@ -1,10 +1,3 @@
-///////////////////////////////////////////////
-//
-// CPE 2073
-// Homework 11
-//
-// Hien Do, soz131
-//
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
