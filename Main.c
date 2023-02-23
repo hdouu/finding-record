@@ -107,7 +107,7 @@ int main()
 	findRecord(&find, rData, count);
 
 	// Look for a record that is not in the list
-	Student notInList = { "Bob", "Applonie" };
+	Student notInList = { "Hien", "Do" };
 	findRecord(&notInList, rData, count);
 
 	return 0;
