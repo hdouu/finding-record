@@ -102,13 +102,13 @@ int main()
 	// Sort the list
 	sortRecords(rData, count);
 
-	// Find the record of "Bernardo Figeroa"
+	// Find the record of "Bernardo Figeroa" as an example
 	Student find = { "Bernardo", "Figeroa" };
 	findRecord(&find, rData, count);
 
 	// Look for a record that is not in the list
-	Student notInList = { "Hien", "Do" };
-	findRecord(&notInList, rData, count);
+	//Student notInList = { "Hien", "Do" };
+	//findRecord(&notInList, rData, count);
 
 	return 0;
 }
