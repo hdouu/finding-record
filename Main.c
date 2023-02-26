@@ -52,8 +52,8 @@ void findRecord(Student* find, Student data[], int count)
 		printf("Found: %s %s %s\n", result->firstname, result->lastname, result->phone);
 	}
 	else 
-	{// else if the record not found print Bob Applonie
-		printf("Record not found: Bob Applonie\n");
+	{// else if the record not found print Hien Do
+		printf("Record not found: Hien Do\n");
 	}
 }
 
