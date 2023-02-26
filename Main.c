@@ -19,9 +19,9 @@ typedef struct
 
 int nameCmp(Student* s1, Student* s2)
 {
-	int name = strcmp(s1->lastname, s2->lastname, s3->phone); 
+	int name = strcmp(s1->lastname, s2->lastname, s3->phone, s4->address); 
 	if (name == 0) // if the first and last names are identical, two records are equal
-		return strcmp(s1->firstname, s2->firstname, s3->phone); // return record
+		return strcmp(s1->firstname, s2->firstname, s3->phone, s4->address); // return record
 	return name; // else return positive and negative
 }
 
@@ -29,13 +29,13 @@ void sortRecords(Student data[], int count)
 {
 	printf("\nBefore sorting\n");
 	for (int i = 0; i < 500; i++) 
-		printf("%s %s %s\n", data[i].firstname, data[i].lastname, data[i].phone); // print a list of 500 records of their first name and last name 
+		printf("%s %s %s %s\n", data[i].firstname, data[i].lastname, data[i].phone, data[i].address); // print a list of 500 records of their first name and last name 
 	
 	qsort(data, count, sizeof(Student), nameCmp); // sort the data set
 
 	printf("\nAfter sorting:\n");
 	for (int i = 0; i < 500; i++)
-		printf("%s %s %s\n", data[i].firstname, data[i].lastname, data[i].phone); // print a list of 500 records firstname and lastname after sorting
+		printf("%s %s %s %s\n", data[i].firstname, data[i].lastname, data[i].phone, data[i].address); // print a list of 500 records firstname and lastname after sorting
 
 	return 0;
 }
@@ -49,7 +49,7 @@ void findRecord(Student* find, Student data[], int count)
 	if (result != 0) 
 	{
 		//if the record exact print out phone and lastname and firstname
-		printf("Found: %s %s %s\n", result->firstname, result->lastname, result->phone);
+		printf("Found: %s %s %s %s\n", result->firstname, result->lastname, result->phone, result->address);
 	}
 	else 
 	{
