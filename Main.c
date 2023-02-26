@@ -48,7 +48,7 @@ void findRecord(Student* find, Student data[], int count)
 
 	if (result != 0) 
 	{
-		//if the record exact print out phone and lastname and firstname
+		//if the record exact print out phone and lastname, firstname, phone and address
 		printf("Found: %s %s %s %s\n", result->firstname, result->lastname, result->phone, result->address);
 	}
 	else 
