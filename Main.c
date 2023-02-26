@@ -28,14 +28,14 @@ int nameCmp(Student* s1, Student* s2)
 void sortRecords(Student data[], int count)
 {
 	printf("\nBefore sorting\n");
-	for (int i = 0; i < 10; i++) 
-		printf("%s %s\n", data[i].firstname, data[i].lastname); // print a list of 10 records first name and last name 
-
+	for (int i = 0; i < 500; i++) 
+		printf("%s %s\n", data[i].firstname, data[i].lastname); // print a list of 500 records of their first name and last name 
+	
 	qsort(data, count, sizeof(Student), nameCmp); // sort the data set
 
 	printf("\nAfter sorting:\n");
-	for (int i = 0; i < 10; i++)
-		printf("%s %s\n", data[i].firstname, data[i].lastname); // print a list of 10 records firstname and lastname after sorting
+	for (int i = 0; i < 500; i++)
+		printf("%s %s\n", data[i].firstname, data[i].lastname); // print a list of 500 records firstname and lastname after sorting
 
 	return 0;
 }
